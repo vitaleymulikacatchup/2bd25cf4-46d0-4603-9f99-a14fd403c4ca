@@ -7,6 +7,7 @@ import FeatureCardTwo from '@/components/sections/feature/FeatureCardTwo';
 import ProductCardTwo from '@/components/sections/product/ProductCardTwo';
 import ContactSplit from '@/components/sections/contact/ContactSplit';
 import FooterBase from '@/components/sections/footer/FooterBase';
+import { Leaf, Star, Edit } from 'lucide-react';
 
 const assetMap = [
   { id: 'hero-image', url: 'https://images.pexels.com/photos/6188305/pexels-photo-6188305.jpeg?auto=compress&cs=tinysrgb&h=650&w=940', alt: 'A young couple having milkshakes and pizza at a cozy cafe. Relaxed and joyful atmosphere.' },
@@ -51,7 +52,7 @@ export default function Home() {
         <div className="mx-auto px-4 md:px-6">
           <SplitAbout
             bulletPoints={[
-              { title: 'Fresh Ingredients', description: 'We source the freshest ingredients locally.', icon: 'Leaf' },
+              { title: 'Fresh Ingredients', description: 'We source the freshest ingredients locally.', icon: Leaf },
               { title: 'Family Tradition', description: 'Recipes passed down through generations.' },
             ]}
             imageSrc={assetMap.find(a => a.id === 'about-image')?.url}
@@ -63,8 +64,8 @@ export default function Home() {
         <div className="mx-auto px-4 md:px-6">
           <FeatureCardTwo
             features={[
-              { title: 'Gourmet Toppings', description: 'Unique tastes with premium toppings', icon: 'Star' },
-              { title: 'Custom Orders', description: 'Personalized pizzas just for you', icon: 'Edit' },
+              { title: 'Gourmet Toppings', description: 'Unique tastes with premium toppings', icon: Star },
+              { title: 'Custom Orders', description: 'Personalized pizzas just for you', icon: Edit },
             ]}
             title="Our Specialties"
             imageSrc={assetMap.find(a => a.id === 'feature-image')?.url}
