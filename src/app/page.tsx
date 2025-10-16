@@ -1,4 +1,4 @@
-use client
+"use client";
 import { ThemeProvider } from "@/providers/ThemeProvider";
 import NavbarStyleMinimal from '@/components/navbar/NavbarStyleMinimal';
 import HeroSplit from '@/components/sections/hero/HeroSplit';
@@ -16,7 +16,7 @@ const assetMap = [
   { id: 'product-image-2', url: 'https://images.pexels.com/photos/5848245/pexels-photo-5848245.jpeg?auto=compress&cs=tinysrgb&h=650&w=940', alt: 'Delicious gourmet pizza in an open cardboard box, shot from above for a classic flat lay presentation.' },
   { id: 'product-image-3', url: 'https://images.pexels.com/photos/6605418/pexels-photo-6605418.jpeg?auto=compress&cs=tinysrgb&h=650&w=940', alt: 'A cheerful chef presents delicious pizzas in a cozy pizzeria setting, showcasing culinary skills.' },
   { id: 'contact-image', url: 'https://images.pexels.com/photos/4473496/pexels-photo-4473496.jpeg?auto=compress&cs=tinysrgb&h=650&w=940', alt: 'Side view of smiling young Asian female cashier wearing apron using modern cash desk with computer screen in cafe with rustic wooden interior' },
-  { id: 'logo-white', url: 'https://images.pexels.com/photos/7317349/pexels-photo-7317349.jpeg?auto=compress&cs=tinysrgb&h=650&w=940', alt: 'Neon sign reading 'Pizzeria Pera' on a textured wall, captured in Istanbul's urban environment.' }
+  { id: 'logo-white', url: 'https://images.pexels.com/photos/7317349/pexels-photo-7317349.jpeg?auto=compress&cs=tinysrgb&h=650&w=940', alt: 'Neon sign reading "Pizzeria Pera" on a textured wall, captured in Istanbul\u0027s urban environment.' }
 ];
 
 export default function Home() {
